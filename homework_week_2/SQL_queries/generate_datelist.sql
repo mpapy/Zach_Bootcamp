@@ -2,7 +2,7 @@
 WITH starter AS (
     SELECT udc.active_dates @> ARRAY [DATE(d.valid_date)]   AS is_active,
            EXTRACT(
-               DAY FROM DATE('2023-01-01') - d.valid_date) AS days_since,
+               DAY FROM DATE('2023-01-31') - d.valid_date) AS days_since,
            udc.user_id,
            udc.browser_type
     FROM user_devices_cumulated udc
