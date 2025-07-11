@@ -22,4 +22,4 @@ WITH starter AS (
      )
 
      INSERT INTO user_browser_datelist_int (user_id, browser_type, datelist_int, date)
-     SELECT user_id, browser_type, datelist_int, date FROM bits
+     SELECT user_id, browser_type, datelist_int, date FROM bits;
